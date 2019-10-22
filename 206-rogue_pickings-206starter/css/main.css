@@ -81,17 +81,18 @@ header nav {
 header nav ul {
 	margin: 0;
 	}
-header nav ul li {list-style-type:none;>
-	text-transform: uppercase;
+header nav ul li {list-style-type:none;
+    text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.8750em;
 	padding: 0 0.625em;
     padding: 10px 30px;
-	
+	color: red;
 }
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
+    
 }
 
 /*The widths are in a percentage!*/
@@ -141,10 +142,7 @@ header nav ul li a{
 }
 
 
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-}
+
 
 
 
@@ -176,19 +174,32 @@ section-three, h4{
    
 }
 
-@media all and (min-width: 1200px) {
-    .section-one, .section-two, .section-three {
-      flex-basis:  30%;
-      
+
+@media screen and (min-device-width: 768px){
+   .section-two {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee; 
     }}
 
- @media all and (min-width:768px) {
-    /* Tablet styles here */
-  .section-one, .section-two, .section-three {
-      flex-basis:  30%;     
-     }
+@media screen and (min-device-width: 768px){
+   .section-one, .section-two, .section-three {
+	flex-basis: 30%;
+    }}
+
+
+
+@media screen and (min-device-width: 1200px){
+    
+    header nav ul {
+	margin: 0;
+    display: flex;
+    justify-content: space-around;    
+	}
+    
+  
 }
 
+ 
 /*The widths are in a percentage!*/
 footer {
 	height: auto;
